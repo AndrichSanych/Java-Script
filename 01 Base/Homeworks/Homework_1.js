@@ -5,14 +5,14 @@ let userYear = +prompt("Enter your birthday year?");
 let age = year - userYear;
 alert(`Your age: ${age}`);
 
-//1.2
+// //1.2
 const size = 820;
 let flashSize = +prompt("Enter size in GB:");
 let res = parseInt((flashSize * 1000)/size);
 alert(`There are ${res} (size 820Mb) files get in flash`)
 
-//2
-//2.1
+// //2
+// //2.1
 let number = +prompt("Enter number in range 0-9");
 switch (number) {
     case 1:
@@ -44,7 +44,7 @@ switch (number) {
         break;
 }
 
-//2.2
+// //2.2
 let checkYear = +prompt("Enter year?");
 if(checkYear%400==0||checkYear%4==0&&checkYear%100!=0)
 {
@@ -52,4 +52,21 @@ if(checkYear%400==0||checkYear%4==0&&checkYear%100!=0)
 }
 else{ alert("The year is not intercalary")}
 
+//2.3 ???
+
 //3
+
+//3.1
+let a = +prompt("Enter first number");
+let b = +prompt("Enter second number")
+let sum = 0;
+for (i = a; a <= b; a++) {
+    sum += a;
+}
+console.log("Summa all numbers:", sum);
+
+//3.2
+let n = prompt("Enter the numbers")
+console.log("Counts of digits: ", n.length);
+
+//3.3 ???
