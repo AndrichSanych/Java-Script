@@ -34,43 +34,60 @@
 
 //Task3
 
-class WeekdayError extends Error {
-    constructor(message) {
-        super(message || "Incorrect weekday number")
+// class WeekdayError extends Error {
+//     constructor(message) {
+//         super(message || "Incorrect weekday number")
+//     }
+// }
+
+
+// function showWeekdayName(day) {
+
+//     if (day < 1 || day > 7)
+//         throw new WeekdayError("Incorrect weekday number")
+
+//     switch (day) {
+//         case 1:
+//             alert("Monday");
+//             break;
+//         case 2:
+//             alert("Tuesday");
+//             break;
+//         case 3:
+//             alert("Wednesday");
+//             break;
+//         case 4:
+//             alert("Thursday");
+//             break;
+//         case 5:
+//             alert("Friday");
+//             break;
+//         case 6:
+//             alert("Saturday");
+//             break;
+//         case 7:
+//             alert("Sunday");
+//             break;
+//     };
+// }
+// let day = +prompt("Enter number of the day:")
+// console.log(showWeekdayName(day)); 
+
+
+//Task4
+
+function getFibonachi() {
+    let a = 0;
+    let b = 1;
+
+    return function () {
+        let c = a + b;
+        a = b;
+        b = c;
+        c = a + b;
     }
 }
 
-
-function showWeekdayName(day) {
-
-    if (day < 1 || day > 7)
-        throw new WeekdayError("Incorrect weekday number")
-
-    switch (day) {
-        case 1:
-            alert("Monday");
-            break;
-        case 2:
-            alert("Tuesday");
-            break;
-        case 3:
-            alert("Wednesday");
-            break;
-        case 4:
-            alert("Thursday");
-            break;
-        case 5:
-            alert("Friday");
-            break;
-        case 6:
-            alert("Saturday");
-            break;
-        case 7:
-            alert("Sunday");
-            break;
-    };
-}
-let day = +prompt("Enter number of the day:")
-console.log(showWeekdayName(day)); 
-
+const res = getFibonachi();
+console.log(res());
 
