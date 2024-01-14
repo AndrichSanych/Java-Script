@@ -1,8 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+
 body {
     height: 100vh;
     display: flex;
@@ -37,7 +33,11 @@ body {
   .memory-card.flip {
     transform: rotateY(180deg);
   }
-  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
   .front-face,
   .back-face {
     width: 100%;
