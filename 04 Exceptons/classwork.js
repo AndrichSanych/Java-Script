@@ -1,36 +1,36 @@
 // Task1
 
-// let number = console.log("Enter the number");
-// let symbol = " ";
-// function show (number)
-// {
-//     for(let i = 0; i <= number; i++)
-//     {
-//         symbol += "(";
-//     }
-//     for(let i = 0; i <= number; i++)
-//     {
-//         symbol += ")";
-//     }
+let number = console.log("Enter the number");
+let symbol = " ";
+function show (number)
+{
+    for(let i = 0; i <= number; i++)
+    {
+        symbol += "(";
+    }
+    for(let i = 0; i <= number; i++)
+    {
+        symbol += ")";
+    }
 
-//     return symbol; 
-// };
+    return symbol; 
+};
 
 //Task2
 
-// let squere = null;
-// function getRectangleArea(width, height) {
-//     if (isNaN(width) || isNaN(height))
-//         throw new ReferenceError("Only number type")
-//     if (width < 0 || height < 0)
-//         throw new Error("Olny positive numbers")
+let squere = null;
+function getRectangleArea(width, height) {
+    if (isNaN(width) || isNaN(height))
+        throw new ReferenceError("Only number type")
+    if (width < 0 || height < 0)
+        throw new Error("Olny positive numbers")
 
-//     return width * height;
-// };
-// let width = +prompt("Enter the width rectangle:");
-// let height = +prompt("Enter the height rectangle:");
+    return width * height;
+};
+let width = +prompt("Enter the width rectangle:");
+let height = +prompt("Enter the height rectangle:");
 
-// console.log(getRectangleArea(width, height));
+console.log(getRectangleArea(width, height));
 
 //Task3
 
